@@ -79,8 +79,8 @@ def usb_print(fmt, *args):
     """
     MicroPython printf-like function using variadic arguments
     Prints to USB only if USB connected and host is active / not sleeping,
-    to prevent clock application from stalling if print fails
-    
+    to prevent clock application from stalling if print fails.
+    Written with help from Copilot
     :param fmt: Format string (supports % formatting or str.format style)
     :param args: Values to substitute into the format string
     """
@@ -186,7 +186,9 @@ def update_ntp_time():
 
 
 def _last_sunday(year, month):
-    """Return the day number of the last Sunday of a given month."""
+    """Return the day number of the last Sunday of a given month.
+       written with help from Copilot
+    """
     # Check days 31 → 25 (all possible last Sundays)
     for day in range(31, 24, -1):
         try:
@@ -198,7 +200,9 @@ def _last_sunday(year, month):
 
 def _is_uk_daylight_saving_time():
     
-    """Return True if UK/LONDON British Summer Time (BST) is active."""
+    """Return True if UK/LONDON British Summer Time (BST) is active.
+       written with help from Copilot
+    """
     
     ntp_time = get_time_ntp()
 
