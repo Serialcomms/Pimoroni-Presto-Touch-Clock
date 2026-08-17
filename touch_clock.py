@@ -58,6 +58,9 @@ BUTTON_HEIGHT = 460
 SCREEN_BUTTON = False
 ANALOGUE = False
 
+# Vector clock items from Pimoroni Examples - see Pimoroni MIT License
+# https://github.com/pimoroni/presto/blob/main/examples/vector_clock_full.py
+
 MIDDLE = (int(WIDTH / 2), int(HEIGHT / 2))
 
 hub = Polygon() # small red circle over second hand
@@ -559,6 +562,9 @@ def draw_grid():
             x += letter_space
                         
 def show_vector_clock():
+    
+    # Vector clock from Pimoroni Examples - see Pimoroni MIT License
+    # https://github.com/pimoroni/presto/blob/main/examples/vector_clock_full.py
     
     display.set_pen(BLACK)
     display.clear()
